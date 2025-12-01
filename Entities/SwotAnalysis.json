@@ -1,0 +1,49 @@
+{
+  "name": "SwotAnalysis",
+  "type": "object",
+  "properties": {
+    "company_type": {
+      "type": "string",
+      "description": "Type or industry of the company"
+    },
+    "company_details": {
+      "type": "string",
+      "description": "Additional details about the company"
+    },
+    "strengths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of company strengths"
+    },
+    "weaknesses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of company weaknesses"
+    },
+    "opportunities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of market opportunities"
+    },
+    "threats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of potential threats"
+    }
+  },
+  "required": [
+    "company_type",
+    "strengths",
+    "weaknesses",
+    "opportunities",
+    "threats"
+  ]
+}
